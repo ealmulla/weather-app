@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: da;
 }
 
 .App-link {
@@ -35,4 +35,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.dark-theme{
+  --text-color:white;
+  --background-color: darkgrey ;
+}
+
+.light-theme{
+  --text-color:black;
+  --background-color: silver;
 }
