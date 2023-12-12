@@ -8,11 +8,9 @@ function App() {
   const {theme} = useTheme();
 
   return (
-    <div id="app" className={theme}>
+    <div id="App" className={theme}>
       <Routes>
-        <Route path="/" element={<div>
-          my Home page
-        </div>}/>
+        <Route path="/" element={<Home/>}/>
       </Routes>
     </div>
   );

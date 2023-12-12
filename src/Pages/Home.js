@@ -3,10 +3,10 @@ import ThemeToggleButton from "../Components/ThemeToggleButton.js/ThemeToggleBut
 
 const Home = () => {
     return(
-        <>
-        home page
-        <ThemeToggleButton/>
-        </>
+        <div className="home">
+            home page
+            <ThemeToggleButton/>
+        </div>
     )
 }
 
