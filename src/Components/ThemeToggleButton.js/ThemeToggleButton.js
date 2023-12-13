@@ -1,10 +1,11 @@
-import "./ThemeToggleButton.css"
-import { useTheme } from "../../Context/ThemeContext"
+// ThemeToggleButton.js
+import "./ThemeToggleButton.css";
+import { useTheme } from "../../Context/ThemeContext";
 
 const ThemeToggleButton = () => {
-    const {ToggleTheme} = useTheme();
-    
-    return <button onClick={ToggleTheme}> Toggle theme</button>
-}
+  const { toggleTheme } = useTheme();
+  
+  return <button onClick={toggleTheme}>Toggle theme</button>;
+};
 
 export default ThemeToggleButton;

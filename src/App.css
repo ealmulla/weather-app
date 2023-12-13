@@ -17,7 +17,7 @@
 }
 
 #App{
-  background-color:var(--background-image);
+  background-image:var(--background-image);
   color: var(--text-color);
   text-align: center;
 }

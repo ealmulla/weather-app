@@ -9,7 +9,7 @@ export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState();
     /*creating toggle function*/
     const toggleTheme = () => {
-        const newTheme = theme == "dark-theme" ? "light-theme" : "dark theme"
+        const newTheme = theme === "dark-theme" ? "light-theme" : "dark-theme"
         //same as "if its dark theme change it to light else change to dark theme"
         // so dark them is the defualt 
         setTheme(newTheme)
