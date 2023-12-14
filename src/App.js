@@ -3,6 +3,9 @@ import './App.css';
 import {Routes, Route} from "react-router-dom";
 import { useTheme } from './Context/ThemeContext';
 import Home from './Pages/Home';
+import Blog from './Pages/Bolg';
+import Login from './Pages/Login';
+import Registration from './Pages/Registration';
 
 function App() {
   const {theme} = useTheme();
@@ -11,6 +14,9 @@ function App() {
     <div id="App" className={theme}>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/Blog" element={<Blog/>}/>
+        <Route path="/Login" element={<Login/>}/>
+        <Route path="/Registration" element={<Registration/>}/>
       </Routes>
     </div>
   );
