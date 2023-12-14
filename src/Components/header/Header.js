@@ -3,7 +3,8 @@ import ThemeToggleButton from "../ThemeToggleButton.js/ThemeToggleButton";
 
 const Header = () => {
     return(
-        <div>
+        <div className="header">
+            
             <ThemeToggleButton/>
         </div>
     )
