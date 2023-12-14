@@ -1,0 +1,35 @@
+.toggle-theme-button{
+    position: relative;
+    width: 86px;
+}
+
+.theme-button{
+    
+}
+
+.theme-button-label{
+    border-radius: 8px;
+}
+.theme-inner{
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.theme-button-inner:before, .theme-button-inner:after{
+    float: left;
+    width: 50%;
+    height: 24px;
+    line-height:24px;
+    font-size: 18px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+
+
+}
+
+.theme-button-switch{
+
+}
