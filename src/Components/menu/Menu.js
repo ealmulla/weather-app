@@ -2,6 +2,7 @@ import "./Menu.css";
 import NavButtons from "./NavButtons/NavButtons.js";
 
 const Menu = () => {
+    
     return(
         <div>
             <NavButtons text="Home" path="/"/>

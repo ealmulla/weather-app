@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-image: linear-gradient(white,blue);
+  
 }
 
 
@@ -21,4 +22,5 @@
   background-image:var(--background-image);
   color: var(--text-color);
   text-align: center;
+  
 }
