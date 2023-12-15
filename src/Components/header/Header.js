@@ -1,7 +1,7 @@
 import "./Header.css"
 import ThemeToggleButton from "../ThemeToggleButton.js/ThemeToggleButton";
 import logo from "/Users/school/weather-app/src/Assets/logo.png"
-
+import Menu from "../menu/Menu";
 
 const Header = () => {
     return(
@@ -11,7 +11,8 @@ const Header = () => {
                 <ThemeToggleButton />
             </div>
             <input className="search-bar"></input>
-            <button></button>
+            <button className="sign-up-header"></button>
+            
         </div>
     )
 }
