@@ -1,0 +1,7 @@
+.open-menu-button{
+    width:20px;
+    height: 20px;
+    fill:var(--text-color);
+    cursor: pointer;
+    background-color: tomato;
+}
