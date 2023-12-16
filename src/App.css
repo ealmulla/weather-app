@@ -1,19 +1,19 @@
 .App {
   text-align: center;
   background-image: linear-gradient(white,blue);
-  
+  font-family:Verdana, Geneva, sans-serif;
 }
 
 
 .dark-theme{
   --text-color:white;
   --background-color: #3a3a3a;
-  --background-image: linear-gradient(to bottom right,grey,black);
+  --background-image: linear-gradient(to bottom right,rgb(91, 91, 91),black);
 }
 
 .light-theme{
   --text-color:black;
-  --background-color: #D9D9D9;
+  --background-color: #e4e6ed;
   --background-image: linear-gradient(to bottom right,white,#0F9FFF);
   
 }
@@ -22,5 +22,6 @@
   background-image:var(--background-image);
   color: var(--text-color);
   text-align: center;
+  
   
 }

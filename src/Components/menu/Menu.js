@@ -9,27 +9,28 @@ const Menu = () => {
 
     const InsideMenu = () => {
             return(
-                <div>
+                <div className="inside-menu">
                     <NavButtons text="Home" path="/"/>
                     <NavButtons text="Blog" path="/Blog"/>
-                    <NavButtons text="Home" path="/"/>
+                    <NavButtons text="Login" path="/Login"/>
+                    <NavButtons text="Registration" path="/Registration"/>
                 </div>
             )
     } 
     const OpenMenuButton = () => {
         return(
             <ImageButton 
-                className="open-menu-button"
                 imageSrc={MenuIcon} 
                 onClickHandle={() => setIsMenuOpen(!isMenuOpen)}
+                className="open-menu-button"
              />
         )
     }
 
     return(
 
-        <div className="open-menu-button">
-            <OpenMenuButton />
+        <div >
+            <OpenMenuButton className="open-menu-button"/>
             {isMenuOpen && <InsideMenu/>}
         </div>
     )

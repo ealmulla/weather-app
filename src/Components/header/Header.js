@@ -11,8 +11,8 @@ const Header = () => {
                 <ThemeToggleButton />
             </div>
             <input className="search-bar"></input>
-            <button className="sign-up-header"></button>
-            <Menu></Menu>
+            <button className="sign-up-header"> sign up</button>
+            <Menu className="homepage-menu"></Menu>
             
         </div>
     )

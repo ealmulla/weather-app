@@ -1,10 +1,13 @@
 import "./Login.css"
-
+import Header from "../Components/header/Header";
 
 
 const Login = () => {
     return(
-        <div></div>
+        <div>
+            <Header></Header>
+            <h1>Login;</h1>
+        </div>
     )
 }
 

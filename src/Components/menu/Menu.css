@@ -1,7 +1,22 @@
 .open-menu-button{
-    width:20px;
-    height: 20px;
-    fill:var(--text-color);
+    display: flex;
+    margin-left: 270px;
+    width:70px;
+    height: 70px;
     cursor: pointer;
-    background-color: tomato;
+    background-color: var(--background-image);
+    border: none;
+    
 }
+
+.inside-menu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    font-family:Verdana, Geneva, sans-serif;
+    font-weight: 700;
+    
+    
+}
+
+

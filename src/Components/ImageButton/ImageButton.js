@@ -1,7 +1,7 @@
-const ImageButton = ({imageSrc, onClickHandle}) => {
+const ImageButton = ({imageSrc, onClickHandle, className}) => {
     return(
-        <button onClick={onClickHandle}>
-            <img src={imageSrc} alt="Button image"/>
+        <button onClick={onClickHandle} className={className}>
+            <img src={imageSrc} alt="Button image" className={className}/>
         </button>
     )
 }
