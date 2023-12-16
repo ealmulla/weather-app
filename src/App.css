@@ -9,13 +9,14 @@
   --text-color:white;
   --background-color: #3a3a3a;
   --background-image: linear-gradient(to bottom right,rgb(91, 91, 91),black);
+  --primary-color: #D9D9D9;
 }
 
 .light-theme{
   --text-color:black;
   --background-color: #e4e6ed;
   --background-image: linear-gradient(to bottom right,white,#0F9FFF);
-  
+  --primary-color: #ffffff;
 }
 
 #App{
