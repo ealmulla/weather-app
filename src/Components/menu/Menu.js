@@ -4,33 +4,32 @@ import ImageButton from "../ImageButton/ImageButton";
 import  MenuIcon from "../../Assets/MenuIcon.png";
 import NavButtons from "./NavButtons/NavButtons.js";
 
+
+
+const InsideMenu = () => {
+        return(
+            <div className="inside-menu">
+                <NavButtons text="Home" path="/"/>
+                <NavButtons text="Blog" path="/Blog"/>
+                <NavButtons text="Login" path="/Login"/>
+                <NavButtons text="Registration" path="/Registration"/>
+            </div>
+        )
+} 
+
 const Menu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    const InsideMenu = () => {
-            return(
-                <div className="inside-menu">
-                    <NavButtons text="Home" path="/"/>
-                    <NavButtons text="Blog" path="/Blog"/>
-                    <NavButtons text="Login" path="/Login"/>
-                    <NavButtons text="Registration" path="/Registration"/>
-                </div>
-            )
-    } 
-    const OpenMenuButton = () => {
-        return(
+    
+
+    return(
+
+        <div >
             <ImageButton 
                 imageSrc={MenuIcon} 
                 onClickHandle={() => setIsMenuOpen(!isMenuOpen)}
                 className="open-menu-button"
              />
-        )
-    }
-
-    return(
-
-        <div >
-            <OpenMenuButton className="open-menu-button"/>
             {isMenuOpen && <InsideMenu/>}
         </div>
     )
