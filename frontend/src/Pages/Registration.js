@@ -1,13 +1,9 @@
 import "./Registration.css"
-import Header from "../Components/header/Header";
 
 
 const Registration = () => {
     return(
         <div className="registration">
-            <div className="registration-header">
-                <Header ></Header>
-            </div>
             
             <div className="input-box">
                 <form>

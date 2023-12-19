@@ -6,7 +6,7 @@ import Header from "../Components/header/Header"
 const Home = () => {
     return(
          <div className="home">
-            <Header> </Header>
+
             home page
             <ThemeToggleButton/>
         </div>

@@ -5,7 +5,7 @@ import Header from "../Components/header/Header";
 const Login = () => {
     return(
         <div className="login">
-            <Header></Header>
+
             <div className="input-box">
                 <form>
                     <h1>LOGIN:</h1>

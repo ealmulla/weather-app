@@ -1,5 +1,7 @@
-.header{
+.header {
+    width: 100vh;
     display: flex;
+    justify-content: space-between;
     
 }
 
