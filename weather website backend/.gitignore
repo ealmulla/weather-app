@@ -1,0 +1,13 @@
+node_modules
+venv/
+.vscode/
+__pycache__/
+.DS_store
+.DS_store?
+._*
+.spotlight-v100
+.Trashes
+ehthubs.db
+Thumbs.db
+
+./idea
