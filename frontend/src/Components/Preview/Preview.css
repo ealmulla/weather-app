@@ -1,0 +1,31 @@
+.preview{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.preview-tittle{
+  font-weight: 800;
+  font-size: 27px;
+}
+
+.preview-content{
+    font-size: 23px;
+}
+
+.arrow{
+    background: none;
+    border: none;
+    width: 30px;
+   
+    transition: transform 0.3s ease;
+}
+.preview:hover .arrow {
+    transform: translateX(10px); /* Adjust the distance to move on hover */
+  }
+  
+
+.arrow-positioning{
+    display: flex;
+    flex-direction: row;
+}
