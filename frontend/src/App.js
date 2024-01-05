@@ -7,6 +7,8 @@ import Blog from './Pages/Bolg';
 import Login from './Pages/Login';
 import Registration from './Pages/Registration';
 import Header from './Components/header/Header';
+import Pollen from './Components/BlogPages/Pollen.js'
+
 
 function App() {
   const {theme} = useTheme();
@@ -19,6 +21,7 @@ function App() {
         <Route path="/Blog" element={<Blog/>}/>
         <Route path="/Login" element={<Login/>}/>
         <Route path="/Registration" element={<Registration/>}/>
+        <Route path='/Pollen' element={<Pollen/>}/>
       </Routes>
     </div>
   );

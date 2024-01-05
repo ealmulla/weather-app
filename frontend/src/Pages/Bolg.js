@@ -10,13 +10,14 @@ const Blog = () => {
             <div className="nav-preview">
                 <div className="line-2">
                 <Preview 
-                tittle={"Lorem ipsum dolor sit amet adipiscing elit."}
+                tittle={"Tips to Help Manage Your Pollen Allergies."}
                 content={"Nulla semper augue ac dolor mollis fringilla. Vivamus mattis magna et fermentum hendrerit. Vestibulum sit amet diam a arcu suscipit condimentum."}
+                path={"/pollen"}
                 />
                 </div>
                 <div className="line-2">
                 <Preview 
-                tittle={"Lorem ipsum dolor sit amet adipiscing elit."}
+                tittle={"Tips to Help Manage Your Asthma."}
                 content={"Nulla semper augue ac dolor mollis fringilla. Vivamus mattis magna et fermentum hendrerit. Vestibulum sit amet diam a arcu suscipit condimentum."}
                 />
                 </div>

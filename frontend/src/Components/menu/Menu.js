@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Menu.css";
 import ImageButton from "../ImageButton/ImageButton";
 import  MenuIcon from "../../Assets/MenuIcon.png";
-import NavButtons from "./NavButtons/NavButtons.js";
+import NavButtons from "./NavButtons/NavButtons.js"
 
 
 

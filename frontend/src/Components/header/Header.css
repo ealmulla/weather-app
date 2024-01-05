@@ -15,8 +15,8 @@
 .search-bar{
     display:flex; 
     margin-top: 30px;
-    margin-left: 140px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 570px;
     height: 30px;
     border:  1px solid rgb(76, 76, 76);
@@ -53,6 +53,6 @@
 
 .open-menu-button{
     display: flex;
-    
+    margin-right: 20px;
 }
 
