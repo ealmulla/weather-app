@@ -7,14 +7,14 @@ const AuthForm = ({onSubmit, formLabel}) => {
 
     return(
         
-        <form className="auth-form" onSubmit={(e) => onSubmit(e, email, password)}>
+        <form className="input-box" onSubmit={(e) => onSubmit(e, email, password)}>
             <h1>SIGN UP:</h1>
             <input 
-                className="registration-input" 
+                className="box-input" 
                 placeholder=" Full name"
                 />
             <input 
-                className="registration-input"
+                className="box-input"
                 id="email"
                 name="email" 
                 placeholder=" Email"
@@ -23,7 +23,7 @@ const AuthForm = ({onSubmit, formLabel}) => {
                 required
                 />
             <input
-                className="registration-input"
+                className="box-input"
                 id="passsowrd"
                 type="password"
                 name="password"
@@ -33,7 +33,7 @@ const AuthForm = ({onSubmit, formLabel}) => {
                 required
                 />
             <input 
-                className="registration-input"
+                className="box-input"
                 placeholder=" Confirm password"
                 /> 
             <button className="confirm-button">Confirm</button>

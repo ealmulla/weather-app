@@ -11,7 +11,7 @@
     display: flex;
     align-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 100px;
     width: 916px;
     height: 616px;
@@ -47,18 +47,17 @@
     margin-left: 200px;
 }
 
-.registration-input{
+.box-input{
     display: flex;
     width: 384px;
     height: 56px;
     margin-top: 20px;
     margin-left: 230px;
-
+    flex-direction: column;
     background: var(--primary-color) ;
     flex-shrink: 0;
     border:none;
     border-radius: 40px;
 
     font-size: 20px;
-
 }

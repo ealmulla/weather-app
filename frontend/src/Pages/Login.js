@@ -1,5 +1,4 @@
 import "./Login.css"
-import Header from "../Components/header/Header";
 
 
 const Login = () => {
@@ -9,8 +8,8 @@ const Login = () => {
             <div className="input-box">
                 <form>
                     <h1>LOGIN:</h1>
-                    <input className="registration-input" placeholder=" Email"></input>
-                    <input className="registration-input" placeholder=" Password"></input>
+                    <input className="box-input" placeholder=" Email"></input>
+                    <input className="box-input" placeholder=" Password"></input>
                     <button className="confirm-button">Confirm</button>
                 </form>
                 
