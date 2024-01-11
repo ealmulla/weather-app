@@ -36,7 +36,7 @@ const AuthForm = ({onSubmit, formLabel}) => {
                 className="box-input"
                 placeholder=" Confirm password"
                 /> 
-            <button className="confirm-button">Confirm</button>
+            <button className="confirm-button" type="submit">Confirm</button>
         </form>
 
     )

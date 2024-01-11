@@ -1,7 +1,7 @@
 import json
 
 def getUsers():
-    with open("db/userDB.json", "r+") as file:
+    with open("db/usersDB.json", "r+") as file:
         return json.load(file)
 
 

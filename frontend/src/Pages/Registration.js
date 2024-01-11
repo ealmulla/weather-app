@@ -12,12 +12,14 @@ const Registration = () => {
     const {setUserId, setUsername} = useAuth()
 
     const  onSubmit = async (e, email, password) => {
-       e.preventDefualt(); 
+        e.preventDefault(); 
 
        const dataToSend = {
         "email" : email,
         "paasword" : password
        }
+
+       console.log(dataToSend)
 
        axios.post("http://localhost:8000/users/register", dataToSend)
        .then((res)=> {
@@ -36,7 +38,7 @@ const Registration = () => {
     return(
         <div className="registration">
             {error && <div className="login-error text-label">{error}</div>}
-            <AuthForm onsubmit={onSubmit} formLabel="Sign Up"/>
+            <AuthForm onSubmit={onSubmit} formLabel="Sign Up"/>
         </div>
     )
 }
