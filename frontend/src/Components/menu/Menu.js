@@ -13,6 +13,7 @@ const InsideMenu = () => {
                 <NavButtons text="Blog" path="/Blog"/>
                 <NavButtons text="Login" path="/Login"/>
                 <NavButtons text="Registration" path="/Registration"/>
+                <NavButtons text="Forum" path="/Forum"/>
             </div>
         )
 } 

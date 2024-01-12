@@ -8,6 +8,7 @@ import Login from './Pages/Login';
 import Registration from './Pages/Registration';
 import Header from './Components/header/Header';
 import Pollen from './Components/BlogPages/Pollen.js'
+import Forum from './Pages/forum.js';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Login" element={<Login/>}/>
         <Route path="/Registration" element={<Registration/>}/>
         <Route path='/Pollen' element={<Pollen/>}/>
+        <Route path='/Forum' element={<Forum/>}/>
       </Routes>
     </div>
   );
