@@ -9,10 +9,10 @@ import NavButtons from "./NavButtons/NavButtons.js"
 const InsideMenu = () => {
         return(
             <div className="inside-menu">
-                <NavButtons text="Home" path="/"/>
-                <NavButtons text="Blog" path="/Blog"/>
-                <NavButtons text="Login" path="/Login"/>
-                <NavButtons text="Registration" path="/Registration"/>
+                <NavButtons className="nav-link" text="Home" path="/"/>
+                <NavButtons className="nav-link" text="Blog" path="/Blog"/>
+                <NavButtons className="nav-link" text="Login" path="/Login"/>
+                <NavButtons className="nav-link" text="Registration" path="/Registration"/>
             </div>
         )
 } 

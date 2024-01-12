@@ -13,8 +13,8 @@
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
-    width: 916px;
-    height: 616px;
+    width: 900px;
+    height: 716px;
     flex-shrink: 0;
 
     border-radius: 30px;
@@ -24,13 +24,13 @@
 }
 
 .confirm-button{
-    margin-left: 170px;
-    margin-top: 20px;
-    width: 100px;
-    height: 42px;
+    margin-left: 10px;
+    margin-top: 25px;
+    width: 140px;
+    height: 46px;
     border: solid black  0.5px;
     background-color: var(--background-color);
-    border-radius: 20px;
+    border-radius: 25px;
 
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
@@ -51,8 +51,8 @@
     display: flex;
     width: 384px;
     height: 56px;
-    margin-top: 20px;
-    margin-left: 230px;
+    margin-top: 30px;
+    margin-left: 40px;
     flex-direction: column;
     background: var(--primary-color) ;
     flex-shrink: 0;
@@ -60,4 +60,25 @@
     border-radius: 40px;
 
     font-size: 20px;
+}
+
+.reg-line{
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 400px;
+    border-bottom:1px solid rgb(149, 149, 149);
+}
+
+.account-q{
+    font-weight: 400;
+}
+
+.login-nav{
+    color: var(--text-color);
+    background: none;
+    border: none;
+    font-size: large;
+    font-style: normal;
+   
+    line-height: normal;
 }

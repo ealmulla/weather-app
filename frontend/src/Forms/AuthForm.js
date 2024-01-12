@@ -1,5 +1,6 @@
 import "./AuthForm.css"
 import { useState } from "react"
+import NavButtons from "../Components/menu/NavButtons/NavButtons"
 
 const AuthForm = ({onSubmit, formLabel}) => {
     const [email, setEmail] = useState("")
@@ -37,6 +38,15 @@ const AuthForm = ({onSubmit, formLabel}) => {
                 placeholder=" Confirm password"
                 /> 
             <button className="confirm-button">Confirm</button>
+            <div className="reg-line"></div>
+            <p className="account-q">
+                Already have an account?
+                <NavButtons
+                text="Login here"
+                path="/login"
+                className="login-nav"
+                />
+                </p> 
         </form>
 
     )

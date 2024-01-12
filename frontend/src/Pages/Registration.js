@@ -37,7 +37,9 @@ const Registration = () => {
         <div className="registration">
             {error && <div className="login-error text-label">{error}</div>}
             <AuthForm onsubmit={onSubmit} formLabel="Sign Up"/>
+            
         </div>
+        
     )
 }
 
