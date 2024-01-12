@@ -1,16 +1,28 @@
 {
-    "users" : [
+    "users": [
         {
             "id": 1,
             "username": "user1",
             "email": "user1@example.com",
             "password": "1234"
-          },
-          {
+        },
+        {
             "id": 2,
             "username": "user2",
             "email": "user2@example.com",
             "password": "1234"
-          }
+        },
+        {
+            "id": "ef0cdc81fdab457e8af68dad25a89354",
+            "email": "man1@uxb.co.uk",
+            "password": "1234",
+            "username": "man"
+        },
+        {
+            "id": "4130e516211e4ae690c3f5c0e871f8f7",
+            "email": "man@uxb.co.uk",
+            "password": "1234",
+            "username": "man"
+        }
     ]
 }

@@ -1,0 +1,21 @@
+.forum{
+    height: 2000px;
+    text-transform: uppercase;
+}
+
+.forum-button:hover{
+    color:#0096FF ;
+}
+
+.forum-buttons{
+    gap: 100px;
+}
+
+.forum-button{
+    color: var(--text-color);
+    border: none;
+    background: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
