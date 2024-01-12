@@ -13,7 +13,7 @@
 }
 
 .light-theme{
-  --text-color: rgba(2, 2, 64, 0.735);
+  --text-color: rgba(0, 0, 36, 0.795);
   /*--text-color: rgb(2, 2, 81);*/
   --background-color: #e4e6ed;
   --background-image: linear-gradient(to bottom right,white,#0F9FFF);

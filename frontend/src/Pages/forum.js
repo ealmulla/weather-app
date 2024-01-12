@@ -1,4 +1,5 @@
 import './forum.css'
+import plus from '../Assets/plus.png'
 
 const Forum = () => {
     return(
@@ -18,9 +19,10 @@ const Forum = () => {
                     featured
                 </button>
                 <button className='forum-button'>
-                    plus image
+                    <img src={plus}/>
                 </button>
             </div>
+
         </div>
     )
 }
