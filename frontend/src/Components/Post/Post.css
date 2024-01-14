@@ -1,0 +1,21 @@
+.post{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: var(--primary-color);
+    color: black;
+    height: 230px;
+    width: 900px;
+    margin-top: 60px;
+    margin-left: 400px;
+}
+
+.post-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-pic{
+    padding: 5px;
+    width: 90px;
+}

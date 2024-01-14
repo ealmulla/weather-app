@@ -48,9 +48,6 @@ const AuthForm = ({onSubmit, formLabel}) => {
                 className="login-nav"
                 />
                 </p> 
-
-            <button className="confirm-button" type="submit">Confirm</button>
-
         </form>
 
     )
