@@ -16,21 +16,27 @@ const Registration = () => {
 
        const dataToSend = {
         "email" : email,
-        "paasword" : password
+        "password" : password
        }
 
        console.log(dataToSend)
 
        axios.post("http://localhost:8000/users/register", dataToSend)
        .then((res)=> {
-        setUserId(res.data.id)
-        setUsername(res.data.username)
+        console.log(res.data.id);
+        console.log(res.data.username);
+      
         localStorage.setItem("userId", res.data.id)
         localStorage.setItem("username", res.data.username)
+        setUserId(res.data.id);
+        setUsername(res.data.username);
+        alert("success")
         navigate("/")
        })
        .catch((err) => {
-        setError(err.response.data.detail)
+        alert(err?.response?.data?.detail || "server error");
+        setError(err?.response?.data?.detail || "some register error")
+        // setError("TEST")
        })
 
     }

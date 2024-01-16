@@ -36,8 +36,7 @@ async def register(credentails:AuthCredentails):            #the info year getti
 
             usersJSON["users"].append(new_user)  #adding new user to database
             saveUsers(usersJSON)
-
-    return {"id" : new_user["id"], "username" : new_user["username"]}
+            return {"id" : new_user["id"], "username" : new_user["username"]}
 
     
 

@@ -20,7 +20,7 @@ export const AuthProvider =({children}) => {
     /* refer to Integrating the login _ register pages with backend 
     presentaion page 9 for explainsion */
     return(
-        <AuthContext.Provider value={(userId,setUserId, username, setUsername, logout)}>
+        <AuthContext.Provider value={{userId,setUserId, username, setUsername, logout}}>
             {children}
         </AuthContext.Provider>
 

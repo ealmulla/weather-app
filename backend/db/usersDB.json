@@ -7,22 +7,82 @@
             "password": "1234"
         },
         {
-            "id": 2,
-            "username": "user2",
-            "email": "user2@example.com",
-            "password": "1234"
+            "id": "eaa0933be21347bb9a048835be9d88e1",
+            "email": "goober@gmail.com",
+            "password": "1234",
+            "username": "goober"
         },
         {
-            "id": "ef0cdc81fdab457e8af68dad25a89354",
-            "email": "man1@uxb.co.uk",
+            "id": "ac75b2bfb3d74843abf09ece5a60504c",
+            "email": "goober@gmail.com",
             "password": "1234",
-            "username": "man"
+            "username": "goober"
         },
         {
-            "id": "4130e516211e4ae690c3f5c0e871f8f7",
-            "email": "man@uxb.co.uk",
+            "id": "7b50c0c067554cb38ebb4b1e324c4cb9",
+            "email": "goober3@gmail.com",
             "password": "1234",
-            "username": "man"
+            "username": "goober3"
+        },
+        {
+            "id": "fadb24bb38dd4d519d50dd6ce6819f3b",
+            "email": "goober3@gmail.com",
+            "password": "1234",
+            "username": "goober3"
+        },
+        {
+            "id": "d1a2d391e233485a90c49f82426399fc",
+            "email": "goober3@gmail.com",
+            "password": "1234",
+            "username": "goober3"
+        },
+        {
+            "id": "6a5fd7e1a353427e8d50d85bfe5f26c6",
+            "email": "goober4@gmail.com",
+            "password": "1234",
+            "username": "goober4"
+        },
+        {
+            "id": "50b72f2cd4fe45d7bbe31fa0ab854bf3",
+            "email": "goober4@gmail.com",
+            "password": "1234",
+            "username": "goober4"
+        },
+        {
+            "id": "022ac4e4f9b84996a39941d12bcaa8f6",
+            "email": "goober5@gmail.com",
+            "password": "1234",
+            "username": "goober5"
+        },
+        {
+            "id": "57c630d0660a4d10af09d0aa21ef2318",
+            "email": "goober6@gmail.com",
+            "password": "1234",
+            "username": "goober6"
+        },
+        {
+            "id": "585a0017fa1d4bfd957791ba9f4e26a6",
+            "email": "goobert7@gmail.com",
+            "password": "1234",
+            "username": "goobert7"
+        },
+        {
+            "id": "6bc6ec258f7c447286c1f8a6d42c3c26",
+            "email": "goober8@gmail.com",
+            "password": "1234",
+            "username": "goober8"
+        },
+        {
+            "id": "1da173d54773492aa13d7c4893043f62",
+            "email": "elma.almulla@gmail.com",
+            "password": "r3egr",
+            "username": "elma.almulla"
+        },
+        {
+            "id": "4caf059c72f64cea8c9d5cefaf45ab34",
+            "email": "elma.almulla@gmail.com",
+            "password": "123",
+            "username": "elma.almulla"
         }
     ]
 }
