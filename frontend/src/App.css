@@ -23,7 +23,5 @@
 #App{
   background-image:var(--background-image);
   color: var(--text-color);
-  text-align: center;
-  
-  
+  text-align: center;  
 }
