@@ -17,9 +17,17 @@ class LoginResonse(BaseModel):
 @router.post("/login", response_model=LoginResonse)
 async def login(credentails: AuthCredentails):
     usersJSON= getUsers()
-    for user in usersJSON["users"]:
-        if(credentails.email == user["email"]):
-            if(credentails.password == user["password"]):
+    #check if user exists
+    for users in usersJSON['users']:
+        if(credentails.email == users['email']):
+            #checking if user exists
+            if credentails.password == users['password']:
+                return{'id':users['id'],'username':users['username']}
+            else:
+                HTTPException(400, detail='Wrong password. Try again')
+    raise HTTPException(400, detail='User doesnt exist. Please register or try agian.')
+
+
                 
 
 #registration function
