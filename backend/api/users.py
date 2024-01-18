@@ -14,6 +14,14 @@ class LoginResonse(BaseModel):
     id: str
     username: str
 
+@router.post("/login", response_model=LoginResonse)
+async def login(credentails: AuthCredentails):
+    usersJSON= getUsers()
+    for user in usersJSON["users"]:
+        if(credentails.email == user["email"]):
+            if(credentails.password == user["password"]):
+                
+
 #registration function
 @router.post("/register", response_model=LoginResonse)      #post bc your sending something .... then resonse model is for documentaion ig
 async def register(credentails:AuthCredentails):            #the info year getting from frontend and then the ":" is for the format in has to be in
