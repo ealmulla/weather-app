@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-from Db.forumUtils import getMyPosts, saveMyPosts,Post
+from Forum.Db.forumUtils import getMyPosts, saveMyPosts,Post
 
 router =APIRouter()
 
