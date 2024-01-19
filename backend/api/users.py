@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-from db.userUtils import getUsers,saveUsers
-from db.dbUtils import genrateUuid
+from UserDb.userUtils import getUsers,saveUsers
+from UserDb.dbUtils import genrateUuid
 
 router = APIRouter()
 
