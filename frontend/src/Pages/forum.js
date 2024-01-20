@@ -57,18 +57,22 @@ const Forum = () => {
             </div>
             {/*user input for post */}
             {addPost && (
-                <div>
+                <div className='user-post-input'>
                     <input
+                    className='title-input'
                     type='text'
                     placeholder='Enter title'
                     value={newPostTitle}
                     onChange={(e) => setNewPostTitle(e.target.value)}
                     />
                     <textarea 
+                    className='content-input'
                     placeholder='Enter content'
                     value={newPostContent}
                     onChange={(e) => setNewPostContent(e.target.value)}/>
-                    <button onClick={handleAddPost}>Confirm</button>
+                    <div className='input-line'></div>
+                    <button onClick={handleAddPost} className='post-confirmation'>Confirm</button>
+
                 </div>
             )}
 
