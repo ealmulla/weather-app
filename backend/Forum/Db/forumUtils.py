@@ -10,9 +10,9 @@ class Post(BaseModel):
     rating: Optional[int] = None
 
 def getMyPosts():
-    with open('./MyPostsDb.json','r+') as file:
+    with open("Forum\Db\MyPostsDb.json",'r+') as file:
         return json.load(file)
     
 def saveMyPosts(newPosts):
-    with open("./MyPostsDb.json","w+") as file:
+    with open("Forum\Db\MyPostsDb.json","w+") as file:
         return file.write(json.dumps(newPosts, indent=4))

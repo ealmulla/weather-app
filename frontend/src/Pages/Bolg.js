@@ -7,7 +7,7 @@ const Blog = () => {
             <h1 className="nav-header">topics</h1>
             <div className="line-1"></div>
             <h2>our resources</h2>
-            /* the diffrent topics available */
+            {/* the diffrent topics available */}
             <div className="nav-preview">
                 <div className="line-2">
                 <Preview 
