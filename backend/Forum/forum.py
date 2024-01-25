@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, status
 from pydantic import BaseModel
 from random import randrange
-from Forum.Db.forumUtils import getMyPosts, saveMyPosts,Post
+from Forum.Db.forumUtils import getMyPosts, saveMyPosts,Post,getUsers
 
 router =APIRouter()
 
@@ -18,14 +18,15 @@ def findPost(id):
 def getAllPosts():
     return{"data":myPosts}
 
-@router.post('./createPost',status_code=status.HTTP_201_CREATED)
-def createPost(post:Post):
+
+@router.post('/createPost',status_code=status.HTTP_201_CREATED)
+def createPost(newData:Post):
+    users = getUsers(newData.id)
     global myPosts
-    postsDict = post.dict()
+    postsDict = newData.dict()
     #craeting a random id for the post
-    postsDict["id"] = randrange(0,100000)
+    postsDict["postId"] = randrange(0,100000)
     myPosts.append(postsDict)
-    print("My posts one:",myPosts)
     saveMyPosts(myPosts)
     return{"data":postsDict}
 
