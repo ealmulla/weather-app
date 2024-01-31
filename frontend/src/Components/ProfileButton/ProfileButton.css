@@ -1,0 +1,17 @@
+.profile-button-header{
+    display: flex;
+    margin-top: 30px;
+    width: 130px;
+    height: 32px;
+    border: solid black  0.5px;
+    background-color: var(--background-color);
+    border-radius: 20px;
+
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.8px;
+    font-weight: 800;
+    text-transform:uppercase;
+    align-items: center;
+
+}
