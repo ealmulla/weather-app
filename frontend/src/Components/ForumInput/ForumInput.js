@@ -7,7 +7,7 @@ import axios from 'axios'
 import { useAuth } from "../../Context/AuthContext"
 
 
-const ForumInput = (fieldName) =>{
+const ForumInput = () =>{
     const [addPost, setAddPost] = useState(false)
     /* craeting a list to put posts in */
     const [posts, setPosts] = useState([])
@@ -15,7 +15,7 @@ const ForumInput = (fieldName) =>{
     const [newPostTitle, setNewPostTitle] = useState('')
     /* allows user to add new data*/  /* eqv is newData*/
     const [newPostContent, setNewPostContent] = useState('')
-    const {userId} = useAuth()
+    const {id} = useAuth()
 
     const handleAddPost = ( ) => {
         // dont post it unless a there is a title and content
@@ -43,10 +43,11 @@ const ForumInput = (fieldName) =>{
     function changeField(event) {
         /* prevents browser refresh */
         event.preventDefault()
-        {console.log("this is the change field one",event)}
+        {console.log("this is the change field one",id)}
         const dataToSend = {
-            "user_id": userId,
-            [fieldName]: newPostContent
+            "user_id": id,
+            "title": newPostTitle,
+            "content": newPostContent
         }
         {console.log(dataToSend)}
         axios.post("http://localhost:8000/forum/createPost",dataToSend)
@@ -106,7 +107,7 @@ const ForumInput = (fieldName) =>{
                     maxLength={2000}
                     />}
                     <div className='input-line'></div>
-                    <button type="submit" onClick={handleAddPost} className='post-confirmation'>Confirm</button>
+                    <button type="submit" onSubmit={handleAddPost} className='post-confirmation'>Confirm</button>
 
                 </div>
                   </form>}
