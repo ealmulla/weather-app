@@ -17,6 +17,20 @@ const ForumInput = () =>{
     const [newPostContent, setNewPostContent] = useState('')
     const {userId} = useAuth()
 
+    useEffect(() =>{
+        axios.get('http://localhost:8000/forum/posts')
+        .then(response =>  setPosts([...posts, response.data.posts]))
+        .catch(error => console('Error fetching data: ', error))
+    },[])
+
+    useEffect(() => {
+        if (userId) {
+            axios.get(`http://localhost:8000/forum/posts?userId=${userId}`)
+            .then(response => {console.log(response.data);})
+            .catch(error => console.error("Error fetching data:",error))
+        }
+    },[userId])
+
     const handleAddPost = ( ) => {
         // dont post it unless a there is a title and content
         if (newPostTitle.trim() == '' || newPostContent.trim() === ''){
@@ -42,18 +56,16 @@ const ForumInput = () =>{
     function changeField(event) {
         /* prevents browser refresh */
         event.preventDefault()
-        {console.log("this is the change field one",userId)}
+        // {console.log("this is the change field one",userId)}
         const localStorageData = localStorage;
-        console.log(localStorageData)
         const dataToSend = {
             "user_id": localStorage.userId,
             "title": newPostTitle,
             "content": newPostContent
         }
-        {console.log(dataToSend)}
         axios.post("http://localhost:8000/forum/createPost",dataToSend)
         .then((res) => {
-            window.location.reload()
+            console.log(res.data)
         })
         .catch((err) => {
             alert(err)
@@ -116,18 +128,12 @@ const ForumInput = () =>{
                   </form>}
          
             {/* like a for loop */
-            posts.map((post, index) => (
+            posts && posts.map((post, index) => (
                 <Post key={index} title={post.title} content={post.content}/>
             ))}
-            <Post
-            title="no"
-            content="hi"
-            />
-            
-        </div>
-    )
 
-      
+        </div>
+    )     
 }
 
 export default ForumInput

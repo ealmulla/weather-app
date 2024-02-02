@@ -16,12 +16,11 @@ def findPost(id):
 # displaying all posts
 @router.get("/posts")
 def getAllPosts():
-    return{"data":myPosts}
+    return{"posts":myPosts}
 
 
 @router.post('/createPost',status_code=status.HTTP_201_CREATED)
 def createPost(newData:Post):
-    print(newData.user_id)
     users = getUserById(newData.user_id)
     global myPosts
     postsDict = newData.dict()
@@ -29,14 +28,14 @@ def createPost(newData:Post):
     postsDict["postId"] = randrange(0,100000)
     myPosts.append(postsDict)
     saveMyPosts(myPosts)
-    return{"data":postsDict}
+    return{"new_post":postsDict}
 
 
 @router.get("/findpost/{id}")
 def findPostById(id:int):
     
     post=findPost(id)
-    return{"data":post}
+    return{"post":post}
 
 def findIndexPosts(id):
     for i,p in enumerate(myPosts):
