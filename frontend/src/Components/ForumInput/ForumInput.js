@@ -1,7 +1,7 @@
 import './ForumInput.css'
 import plus from '../../Assets/plus.png'
 import Post from '../../Components/Post/Post'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ImageButton from '../../Components/ImageButton/ImageButton'
 import axios from 'axios'
 import { useAuth } from "../../Context/AuthContext"
@@ -46,7 +46,7 @@ const ForumInput = () =>{
         const localStorageData = localStorage;
         console.log(localStorageData)
         const dataToSend = {
-            "user_id": userId,
+            "user_id": localStorage.userId,
             "title": newPostTitle,
             "content": newPostContent
         }
@@ -59,6 +59,8 @@ const ForumInput = () =>{
             alert(err)
         })
     }
+
+    
 
     return(
 

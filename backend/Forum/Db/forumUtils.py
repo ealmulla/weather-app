@@ -14,7 +14,7 @@ class Post(BaseModel):
 def getUserById(id):
     users = getUsers()
     for user in users["users"]:
-        if id == users["id"]:
+        if id == user["id"]:
             return user
 
 def getMyPosts():
