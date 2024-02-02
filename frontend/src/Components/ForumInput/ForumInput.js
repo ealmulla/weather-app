@@ -15,7 +15,7 @@ const ForumInput = () =>{
     const [newPostTitle, setNewPostTitle] = useState('')
     /* allows user to add new data*/  /* eqv is newData*/
     const [newPostContent, setNewPostContent] = useState('')
-    const {id} = useAuth()
+    const {userId} = useAuth()
 
     const handleAddPost = ( ) => {
         // dont post it unless a there is a title and content
@@ -30,7 +30,6 @@ const ForumInput = () =>{
 
         /* adding to list */
         setPosts([...posts, newPost])
-        
        
         //clear input after adding post
         setNewPostTitle('')
@@ -43,9 +42,11 @@ const ForumInput = () =>{
     function changeField(event) {
         /* prevents browser refresh */
         event.preventDefault()
-        {console.log("this is the change field one",id)}
+        {console.log("this is the change field one",userId)}
+        const localStorageData = localStorage;
+        console.log(localStorageData)
         const dataToSend = {
-            "user_id": id,
+            "user_id": userId,
             "title": newPostTitle,
             "content": newPostContent
         }
@@ -57,7 +58,6 @@ const ForumInput = () =>{
         .catch((err) => {
             alert(err)
         })
-        
     }
 
     return(
@@ -85,9 +85,6 @@ const ForumInput = () =>{
                 
             </div>
             {/*user input for post */}
-
-            
-           
                 {addPost &&  <form onSubmit={changeField}>
                 
                 <div className='user-post-input'>
@@ -107,7 +104,11 @@ const ForumInput = () =>{
                     maxLength={2000}
                     />}
                     <div className='input-line'></div>
-                    <button type="submit" onSubmit={handleAddPost} className='post-confirmation'>Confirm</button>
+                    <button 
+                    type="submit"
+                    onSubmit={handleAddPost}
+                    className='post-confirmation'
+                    >Confirm</button>
 
                 </div>
                   </form>}
